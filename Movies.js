@@ -17,16 +17,16 @@ var MovieSchema = new Schema({
     title: {type: String, required: true, index: { unique: true }},
     year: {type: String, required: true},
     genre: {type: String, required: true},
-    actors: [{
-        actor: {type: String, required: true},
-        characters: {type: String, required: true}
+    cast: [{
+        actorName: {type: String, required: true},
+        characterName: {type: String, required: true}
     }]
 });
 
 MovieSchema.pre('save', function(next) {
     var movie = this;
 
-    if (movie.actors.length < 3) {
+    if (movie.cast.length < 3) {
         var err = new ValidationError(this);
         err.errors.movie = new ValidatorError('need 3 or more actors');
         next(err);
