@@ -88,7 +88,7 @@ router.post('/signin', function (req, res) {
 
 router.route('/movies')
     .post(function(req, res) {
-            if (!req.body.title || !req.body.year || !req.body.genre || !req.body.actor) {
+            if (!req.body.title || !req.body.year || !req.body.genre || !req.body.actors) {
                 res.json({success: false, msg: 'Please include all data.'});
                 return;
             }
@@ -98,7 +98,7 @@ router.route('/movies')
             new_movie.title = req.body.title;
             new_movie.year = req.body.year;
             new_movie.genre = req.body.genre;
-            new_movie.cast = req.body.actor;
+            new_movie.actors = req.body.actors;
 
             new_movie.save(function(err){
                 if (err) {
