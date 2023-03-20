@@ -70,3 +70,9 @@ Create a collection in MongoDB to hold information about movies
 - https://www.mongodb.com/cloud/atlas
 - Create a Free Subscription *Amazon
 - https://render.com/docs/deploy-create-react-app **important: Environment Variable for https://github.com/AliceNN-ucdenver/CSC3916_REACT env.REACT_APP_API_URL, this weekend I will look at changes (I believe only 1 change in the actions)
+
+## Submissions
+### Postman
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/25408364-2ee94259-2f83-435c-afe4-39f02fcfe185?action=collection%2Ffork&collection-url=entityId%3D25408364-2ee94259-2f83-435c-afe4-39f02fcfe185%26entityType%3Dcollection%26workspaceId%3De2239a59-d0c8-4491-ae61-e4c19ce78126#?env%5BKhoiHW3%5D=W3sia2V5IjoiSldUIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlLCJ0eXBlIjoiZGVmYXVsdCIsInNlc3Npb25WYWx1ZSI6IkpXVC4uLiIsInNlc3Npb25JbmRleCI6MH1d)
+### REACT Site
+https://csc3916-react-lb5a.onrender.com
